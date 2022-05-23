@@ -1,0 +1,215 @@
+/*DELETE COMMENTS LATER, RN PUT BORDER ELEMENTS ON EVERYTHING*/
+body,
+html {
+  height: 100%;
+  background-color: #282c2e;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Carbon Block', verdana;
+}
+
+h2 {
+  color: black;
+}
+
+.display-4,
+.jumbotron-text,
+.navbar-brand {
+  visibility: hidden;
+}
+
+.navbar{
+padding-top: 3%;
+padding-bottom: 3%;
+background-color: white;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #000000;
+  font-size: 1.1em;
+/* font: https://allfont.net/download/carbon-block/ */
+  font-family: 'Carbon Block', verdana;
+}
+.navbar .navbar-nav .nav-link:hover{
+  color: #808080;
+}
+
+.jumbotron {
+  background-color: #282c2e;
+}
+
+h2,
+.card-title,
+.card-text {
+  text-align: center;
+}
+
+.jumbotron {
+  color: white;
+  background-image: url("webanner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding: 10px;
+}
+
+
+
+/*paragraph 1 on homepage*/
+.paragraph-1 {
+  margin: 20px;
+  padding: 20px;
+  color: white;
+}
+
+.paragraph-1-text {
+  padding: 10px;
+}
+
+.paragraph-1-image-1 {
+  max-width: 100%;
+  height: auto;
+}
+
+/*paragraph 2 on homepage*/
+.paragraph-2 {
+  margin: 20px;
+  padding: 20px;
+  color: white;
+}
+
+.paragraph-2-text {
+  padding: 10px;
+}
+
+.paragraph-2-image-2 {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Gallery*/
+.gallery-title {
+  padding-top: 20px;
+  color: white;
+}
+
+/*cards*/
+.gallery-row-1 {
+  align-content: center;
+}
+
+.card {
+  margin: 10px;
+}
+
+/*Credit: https://tobiasahlin.com/blog/how-to-animate-box-shadow/ */
+.card-gallery {
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card-gallery::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card-gallery:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+.card-gallery:hover::after {
+    opacity: 1;
+}
+
+.card-text{
+  color: black;
+}
+
+
+/*schedule*/
+.spacing-h2-schedule,
+.spacing-h2-organization {
+  color: white;
+}
+
+/*footer*/
+
+footer {
+  background-color: white;
+}
+
+.footer-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  padding-bottom: 30px;
+}
+
+.container {
+  padding-bottom: 20px;
+}
+
+.spacing-h2-organization,
+.spacing-h2-schedule {
+  padding-top: 20px;
+}
+
+.top {
+  width: 50px;
+  height: 0.5em;
+  border: 0;
+  border-top: 1px solid #ffffff;
+}
+.background,
+.overlay:before {
+  background: url("contact-background.jpg") no-repeat fixed 0 0 / cover;
+}
+.card {
+  color: gray;
+}
+.container-fluid {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.overlay {
+  margin: 0 auto;
+  max-width: 768px;
+  overflow: hidden;
+  position: relative;
+  color: black;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  z-index: 0;
+}
+.overlay:before {
+  content: "";
+  filter: blur(20px);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+© 2022 GitHub, Inc.
+Terms
