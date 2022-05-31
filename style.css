@@ -2,13 +2,14 @@
 body,
 html {
   height: 100%;
-  background-color: #282c2e;
+
   width: 100%;
   overflow-x: hidden;
+  background-image: linear-gradient(to bottom right, black, #282c2e);
 }
 
 body {
-  font-family: 'Carbon Block', verdana;
+  font-family: "Carbon Block", verdana;
 }
 
 h2 {
@@ -21,20 +22,27 @@ h2 {
   visibility: hidden;
 }
 
-.navbar{
-padding-top: 3%;
-padding-bottom: 3%;
-background-color: white;
+.navbar {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: white;
 }
 
 .navbar .navbar-nav .nav-link {
   color: #000000;
-  font-size: 1.1em;
-/* font: https://allfont.net/download/carbon-block/ */
-  font-family: 'Carbon Block', verdana;
+  font-size: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* font: https://allfont.net/download/carbon-block/ */
+  font-family: "Carbon Block", verdana;
 }
-.navbar .navbar-nav .nav-link:hover{
+
+.navbar .navbar-nav .nav-link:hover {
   color: #808080;
+}
+
+h2 {
+  font-family: "Carbon Block", verdana;
 }
 
 .jumbotron {
@@ -45,6 +53,7 @@ h2,
 .card-title,
 .card-text {
   text-align: center;
+  color: black;
 }
 
 .jumbotron {
@@ -56,13 +65,19 @@ h2,
   padding: 10px;
 }
 
-
-
 /*paragraph 1 on homepage*/
 .paragraph-1 {
   margin: 20px;
   padding: 20px;
   color: white;
+  border: 8px double red;
+  border-radius: 5px;
+}
+
+.calendar {
+  margin: 20px;
+  border: 8px double red;
+  border-radius: 5px;
 }
 
 .paragraph-1-text {
@@ -79,6 +94,8 @@ h2,
   margin: 20px;
   padding: 20px;
   color: white;
+  border: 8px double red;
+  border-radius: 5px;
 }
 
 .paragraph-2-text {
@@ -103,6 +120,10 @@ h2,
 
 .card {
   margin: 10px;
+  min-height: 310px;
+  color: white;
+  border: 8px double;
+  border-radius: 5px;
 }
 
 /*Credit: https://tobiasahlin.com/blog/how-to-animate-box-shadow/ */
@@ -135,18 +156,25 @@ h2,
 }
 
 .card-gallery:hover::after {
-    opacity: 1;
+  opacity: 1;
 }
 
-.card-text{
+.card-text {
   color: black;
 }
 
+.kirlin-fund {
+  height: 340px;
+}
 
 /*schedule*/
 .spacing-h2-schedule,
 .spacing-h2-organization {
   color: white;
+}
+
+hr {
+  background-color: red;
 }
 
 /*footer*/
@@ -162,6 +190,10 @@ footer {
 
 .icon {
   padding-bottom: 30px;
+}
+
+.follow-us {
+  font-family: "Carbon Block", verdana;
 }
 
 .container {
@@ -193,7 +225,7 @@ footer {
 }
 .overlay {
   margin: 0 auto;
-  max-width: 768px;
+  max-width: 500px;
   overflow: hidden;
   position: relative;
   color: black;
@@ -211,5 +243,34 @@ footer {
   width: 100%;
   z-index: -1;
 }
-© 2022 GitHub, Inc.
-Terms
+
+/*Just an idea if we wanna make the titles solid to fit the rest here's a solid color example https://css-tricks.com/how-to-create-neon-text-with-css/ */
+
+/*Glowing text*/
+.glow {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000,
+      0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000;
+  }
+  to {
+    text-shadow: 0 0 20px #ed0505, 0 0 30px #ed0505, 0 0 40px #ed0505,
+      0 0 50px #ed0505, 0 0 60px #ed0505, 0 0 70px #ed0505, 0 0 80px #ed0505;
+  }
+}
+
+/*#example10 {
+  color: white;
+  font-size: 47px;
+  -webkit-text-stroke: 1px #f8f8f8;
+  text-shadow: 0px 2px 4px red;
+}
+*/
