@@ -70,64 +70,107 @@
       </div>
     </nav>
     <div class="container-fluid background">
-      <!--we need to set max width-->
-        <div class="overlay">
-          <h1>Shoot us a message!</h1>
-          <hr class="top">
-          <p class="border">Katie's Komets is always looking for new players! <br>
-          You can also contact us at 267-688-7230 <br>
-          Practices for Katie's Komets are at the Carousel House on Saturday Mornings from the fall until the spring.
-        </p>
-        <p class="border">
-          Carousel House <br>
-          4300 Avenue of the Republic <br>
-          Philadelphia, PA 19131 <br>
-          215-685-0160
-        </p>
-          <div class="card mb-4">
-            <div class="card-body">
+      <div class="overlay">
+        <h1 class="glow">Shoot Us a Message!</h1>
+        <hr class="contact-line" />
+        <div class="texts">
+          <p class="text">
+            Katie's Komets is always looking for new players! <br />
+            You can also contact us at 267-688-7230 <br />
+            Practices for Katie's Komets are at the Carousel House on Saturday
+            Mornings from the fall until the spring.
+          </p>
+        </div>
+        <div class="texts">
+          <p class="text">
+            Carousel House <br />
+            4300 Avenue of the Republic <br />
+            Philadelphia, PA 19131 <br />
+            215-685-0160
+          </p>
+        </div>
+        <!--testing with table-->
+        <div class="card mb-4" id="contact-info">
+          <div class="card-body">
+            <table>
               <!--first name-->
-                <form id="email-form">
-                    <div class="form-section">
-                      <label for="first-name">First Name:</label>
-                      <input id="first-name" name="first-name" type="text">
-                    </div>
+              <tr>
+                <div class="form-section">
+                  <td>
+                    <label for="first-name">First Name:</label>
+                  </td>
+                  <td>
+                    <input
+                      class="form-control"
+                      id="first-name"
+                      name="first-name"
+                      type="text"
+                    />
+                  </td>
+                </div>
+              </tr>
               <!--last name-->
-              <div class="email-form">
-                  <label for="last-name">Last Name:</label>
-                  <input id="last-name" name="last-name" type="text">
+              <tr>
+                <div class="email-form">
+                  <td><label for="last-name">Last Name:</label></td>
+                  <td>
+                    <input
+                      class="form-control"
+                      id="last-name"
+                      name="last-name"
+                      type="text"
+                    />
+                  </td>
                 </div>
-              <!--email-->
-              <div class="email-form">
-                  <label for="email">Email:</label>
-                  <input id="email" name="email" type="email">
+              </tr>
+              <tr>
+                <!--email-->
+                <div class="email-form">
+                  <td><label for="email">Email:</label></td>
+                  <td>
+                    <input
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      type="email"
+                    />
+                  </td>
                 </div>
-              <!--textbox example-->
-              <div class="form-row">
-                <label class="mb-sm-2 mt-3" for="billInput">Bill Amount</label>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">$</span>
-                  </div>
-                  <input type="number" class="form-control" id="billInput" placeholder="" min="00.00" value="100.00" step="0.010">
-                </div>
-              </div>
-              <!--dropdown example-->
-              <div class="form-row">
-                <label class="mb-sm-2 mt-3" for="tipForm">Tip Amount</label>
-                <select class="form-control" id="tipForm">
-                  <option value=".05">5% </option>
-                  <option value=".1">10% </option>
-                  <option selected value=".15">15% </option>
-                  <option value=".2">20% </option>
-                  <option value=".25">25% </option>
-                </select>
-              </div>
-            </div>
+              </tr>
+              <!--pick who to contact-->
+              <tr>
+                <td>
+                  <label class="mb-sm-2 mt-3" for="tipForm">Contact:</label>
+                </td>
+                <td>
+                  <select class="form-control">
+                    <option value="0"></option>
+                    <option value=".05">Head Coach</option>
+                    <option value=".1">Team Representative</option>
+                    <option value=".15">Katie Kirlin Fund</option>
+                    <option value=".2">Webmaster</option>
+                  </select>
+                </td>
+              </tr>
+              <!--upload file-->
+              <tr>
+                <td>Files to upload:</td>
+                <td><input name="upload-file" type="file" /></td>
+              </tr>
+              <!--message box-->
+              <tr>
+                <td><label for="message">Message:</label></td>
+                <td>
+                  <textarea name="message" cols="40" rows="5"> </textarea>
+                </td>
+              </tr>
+            </table>
           </div>
-          
-          <button type="button" class="btn btn-outline-light btn-lg btn-block" onclick="calcTip()">Calculate Tip Total</button>
-        <!--end of overlay-->
+
+          <button type="button" class="btn btn-lg btn-block">
+            Send!
+          </button>
+          <!--end of overlay-->
         </div>
       </div>
     </div>
