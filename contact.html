@@ -47,7 +47,7 @@
       </button>
       <div class="collapse navbar-collapse" id="myNavbarToggler13">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <b><a class="nav-link" href="index.html">Home</a></b>
           </li>
           <li class="nav-item">
@@ -64,104 +64,116 @@
             >
           </li>
           <li class="nav-item">
-            <b><a class="nav-link" href="contact.html">Contact</a></b>
+            <b><a class="nav-link active" href="contact.html">Contact</a></b>
           </li>
         </ul>
       </div>
     </nav>
     <div class="container-fluid background">
-      <div class="overlay">
-        <h1 class="glow">Shoot Us a Message!</h1>
+      <div class="overlay my-4">
+        <h1 class="glow"><div class="pt-4 mx-4">Shoot Us a Message!</div></h1>
         <hr class="contact-line" />
         <div class="texts">
-          <p class="text">
-            Katie's Komets is always looking for new players! <br />
-            You can also contact us at 267-688-7230 <br />
-            Practices for Katie's Komets are at the Carousel House on Saturday
-            Mornings from the fall until the spring.
-          </p>
+          <b>
+            <p class="text">
+              Katie's Komets is always looking for new players! <br />
+              You can also contact us at 267-688-7230 <br />
+              Practices for Katie's Komets are at the Carousel House on Saturday
+              Mornings from the fall until the spring.
+            </p>
+          </b>
         </div>
         <div class="texts">
-          <p class="text">
-            Carousel House <br />
-            4300 Avenue of the Republic <br />
-            Philadelphia, PA 19131 <br />
-            215-685-0160
-          </p>
+          <b>
+            <p class="text">
+              Carousel House <br />
+              4300 Avenue of the Republic <br />
+              Philadelphia, PA 19131 <br />
+              215-685-0160
+            </p>
+          </b>
         </div>
         <!--testing with table-->
-        <div class="card mb-4" id="contact-info">
+        <div class="card-color mb-4" id="contact-info">
           <div class="card-body">
             <table>
-              <!--first name-->
               <tr>
-                <div class="form-section">
-                  <td>
-                    <label for="first-name">First Name:</label>
-                  </td>
-                  <td>
-                    <input
-                      class="form-control"
-                      id="first-name"
-                      name="first-name"
-                      type="text"
-                    />
-                  </td>
-                </div>
+                <td>
+                  <label
+                    for="inputFirstName"
+                    class="col-xs-4 col-form-label mr-2"
+                    >First Name:</label
+                  >
+                </td>
+                <td>
+                  <input
+                    type="text-type"
+                    class="form-control"
+                    id="inputFirstName"
+                  />
+                </td>
               </tr>
               <!--last name-->
               <tr>
-                <div class="email-form">
-                  <td><label for="last-name">Last Name:</label></td>
-                  <td>
-                    <input
-                      class="form-control"
-                      id="last-name"
-                      name="last-name"
-                      type="text"
-                    />
-                  </td>
-                </div>
-              </tr>
-              <tr>
-                <!--email-->
-                <div class="email-form">
-                  <td><label for="email">Email:</label></td>
-                  <td>
-                    <input
-                      class="form-control"
-                      id="email"
-                      name="email"
-                      type="email"
-                    />
-                  </td>
-                </div>
-              </tr>
-              <!--pick who to contact-->
-              <tr>
                 <td>
-                  <label class="mb-sm-2 mt-3" for="tipForm">Contact:</label>
+                  <label
+                    for="inputLastName"
+                    class="col-xs-4 col-form-label mr-2"
+                    >Last Name:</label
+                  >
                 </td>
                 <td>
-                  <select class="form-control">
-                    <option value="0"></option>
-                    <option value=".05">Head Coach</option>
-                    <option value=".1">Team Representative</option>
-                    <option value=".15">Katie Kirlin Fund</option>
-                    <option value=".2">Webmaster</option>
+                  <input
+                    type="text-type"
+                    class="form-control"
+                    id="inputLastName"
+                  />
+                </td>
+              </tr>
+              <!--email-->
+              <tr>
+                <td>
+                  <label for="inputEmail" class="col-xs-4 col-form-label mr-2"
+                    >Email:</label
+                  >
+                </td>
+                <td>
+                  <input type="text-type" class="form-control" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="mr-sm-2" for="inlineFormCustomSelect"
+                    >Contact:</label
+                  >
+                </td>
+                <td>
+                  <select
+                    class="custom-select mr-sm-2"
+                    id="inlineFormCustomSelect"
+                  >
+                    <option selected>Head Coach</option>
+                    <option value="1">Team Representative</option>
+                    <option value="2">Katie Kirlin Fund</option>
+                    <option value="3">Webmaster</option>
                   </select>
                 </td>
               </tr>
-              <!--upload file-->
+              <!--message-->
               <tr>
-                <td>Files to upload:</td>
-                <td><input name="upload-file" type="file" /></td>
-              </tr>
-              <!--message box-->
-              <tr>
-                <td><label for="message">Message:</label></td>
                 <td>
-                  <textarea name="message" cols="40" rows="5"> </textarea>
+                  <label for="inputMessage" class="col-xs-4 col-form-label mr-2"
+                    >Message:</label
+                  >
+                </td>
+                <td>
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                    ></textarea>
+                  </div>
                 </td>
               </tr>
             </table>
@@ -182,17 +194,19 @@
         </h2>
       </div>
       <div class="row">
-        <div class="col-sm-6 d-flex justify-content-center">
+        <div class="col d-flex justify-content-center">
           <span>
             <a href="https://www.facebook.com/KatiesKomets/"
-              ><img class="icon" src="https://i.imgur.com/jG4zPBu.png"
+              ><img
+                class="icon social-media"
+                src="https://i.imgur.com/jG4zPBu.png"
             /></a>
           </span>
-        </div>
-        <div class="col-sm-6 d-flex justify-content-center">
           <span>
             <a href="https://www.instagram.com/katieskomets/?hl=en"
-              ><img class="icon" src="https://i.imgur.com/z9k3R0K.png"
+              ><img
+                class="icon social-media"
+                src="https://i.imgur.com/z9k3R0K.png"
             /></a>
           </span>
         </div>

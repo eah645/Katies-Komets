@@ -29,25 +29,31 @@ h2 {
 }
 
 .navbar .navbar-nav .nav-link {
-  color: #000000;
   font-size: 25px;
   padding-left: 20px;
   padding-right: 20px;
   /* font: https://allfont.net/download/carbon-block/ */
-  font-family: "Carbon Block", verdana;
+  font-family: "Montserrat", sans-serif;
 }
 
-.navbar .navbar-nav .nav-link:hover {
-  color: rgb(255, 38, 38);
+h5 {
+  font-family: "Montserrat", sans-serif;
+}
 
-  word-wrap: break-word;
+p,
+h1 {
+  font-family: "Avenir Roman", "Helvetica", Arial, sans-serif;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: white;
+
   text-shadow: 0 0 7px rgb(255, 32, 32), 0 0 10px rgb(255, 32, 32),
     0 0 50px rgb(255, 32, 32), 0 0 40px white, 0 0 50px white, 0 0 50px white,
     0 0 50px white, 0 0 50px white;
 }
 
 h2 {
-  font-family: "Carbon Block", verdana;
+  font-family: "Montserrat", sans-serif;
 }
 
 .jumbotron {
@@ -127,6 +133,7 @@ h2,
   margin: 10px;
   min-height: 310px;
   color: white;
+  opacity: 90%;
   border: 8px double;
   border-radius: 5px;
 }
@@ -183,13 +190,15 @@ hr {
 }
 
 .contact-line {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 /*footer*/
 
 footer {
-  background-color: white;
+  background-color: rgb(209, 190, 190);
 }
 
 .footer-title {
@@ -198,11 +207,13 @@ footer {
 }
 
 .icon {
-  padding-bottom: 30px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .follow-us {
-  font-family: "Carbon Block", verdana;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -225,14 +236,15 @@ footer {
   background: url("contact-background.jpg") no-repeat fixed 0 0 / cover;
 }
 .card {
-  color: gray;
+  color: #282c2e;
 }
 .container-fluid {
   align-items: center;
   display: flex;
   justify-content: center;
 }
-.overlay {
+
+/* .overlay {
   margin: 0 auto;
   max-width: 500px;
   overflow: hidden;
@@ -244,13 +256,21 @@ footer {
 }
 .overlay:before {
   content: "";
-  filter: blur(20px);
+  filter: blur(5px);
   height: 100%;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: -1;
+} */
+
+.overlay {
+  background-color: black;
+  opacity: 90%;
+  max-width: 500px;
+  overflow: hidden;
+  position: relative;
 }
 
 /*Just an idea if we wanna make the titles solid to fit the rest here's a solid color example https://css-tricks.com/how-to-create-neon-text-with-css/ */
@@ -285,13 +305,38 @@ p.border {
 
 .texts,
 #contact-info {
-  background-color: white;
-  margin: 10px;
-  border: 8px double rgb(255, 77, 77);
-  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 30px;
+  border-radius: 8px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding: 10px;
 }
 
 p.text {
   margin: 0px;
   padding: 10px;
+  text-align: center;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: white;
+  text-shadow: 0 0 7px rgb(255, 32, 32), 0 0 10px rgb(255, 32, 32),
+    0 0 50px rgb(255, 32, 32), 0 0 40px white, 0 0 50px white, 0 0 50px white,
+    0 0 50px white, 0 0 50px white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+.social-media:hover {
+  filter: drop-shadow(2px 2px 4px white);
+}
+
+label {
+  font-family: "Montserrat", sans-serif;
 }
